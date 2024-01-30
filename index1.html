@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier d'Achat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <footer>
+        <form action="/votre-page-de-recherche" method="get" class="search-form">
+            <label for="search" class="visually-hidden">Rechercher :</label>
+            <input type="text" id="search" name="q" placeholder="Entrez votre recherche ici">
+            <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+        </form>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#produits">Produits</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href=""><i class="fas fa-shopping-cart"></i> Panier</a></li>
+            </ul>
+        </nav>
+    </footer>   
+    
+    <main>
+        <div class="article" id="article1">
+            <img src="Image/Benyar.jpg" alt="">
+            <p>BENYAR <br> <span class="prix">99,99 $</span></p>
+            <button class="plus" data-article="article1">+</button>
+            <span class="nombre-restant">5</span>
+            <button class="moins" data-article="article1">-</button> <br><br>
+            <button class="icon-button" data-article="article1">
+                <i class="far fa-heart"></i>
+            </button>
+            <button class="delete" data-article="article1">
+                <i class="fas fa-trash-alt"></i>
+            </button> <br> <br>
+            <a href="https://i.pinimg.com/564x/bf/ce/d4/bfced454f156bcceb497b294a2bb207e.jpg">lien de l'article</a>
+        </div>
+
+        <div class="article" id="article2">
+            <img src="Image/Gshock.jpg" alt="">
+            <p>G SHOCK <br> <span class="prix"> 109,9 $</span></p>
+            <button class="plus" data-article="article2">+</button>
+            <span class="nombre-restant">5</span>
+            <button class="moins" data-article="article2">-</button> <br><br>
+            <button class="icon-button" data-article="article2">
+                <i class="far fa-heart"></i>  
+            </button>
+            <button class="delete" data-article="article2">
+                <i class="fas fa-trash-alt"></i>
+            </button> <br> <br>
+            <a href="https://i.pinimg.com/564x/67/4a/3b/674a3ba354a3b38f0e0988a940e3502c.jpg">lien de l'article</a>
+        </div>
+
+        <div class="article" id="article3">
+            <img src="Image/Quartz.jpg" alt="">
+            <p>QUARTZ <br> <span class="prix"> 200,20 $</span></p>
+            <button class="plus" data-article="article3">+</button>
+            <span class="nombre-restant">5</span>
+            <button class="moins" data-article="article3">-</button> <br><br>
+            <button class="icon-button" data-article="article3">
+                <i class="far fa-heart"></i>  
+            </button>
+            <button class="delete" data-article="article3">
+                <i class="fas fa-trash-alt"></i>
+            </button> <br> <br>
+            <a href="https://i.pinimg.com/564x/a8/29/b9/a829b9fa1987811997a2bde540d74699.jpg">lien de l'article</a>
+        </div>
+
+        <div class="article" id="article4">
+            <img src="Image/C.jpg" alt="">
+            <p>BENYAR <br> <span class="prix"> 87,3 $</span></p>
+            <button class="plus" data-article="article4">+</button>
+            <span class="nombre-restant">5</span>
+            <button class="moins" data-article="article4">-</button> <br><br>
+            <button class="icon-button" data-article="article4">
+                <i class="far fa-heart"></i>  
+            </button>
+            <button class="delete" data-article="article4">
+                <i class="fas fa-trash-alt"></i>
+            </button> <br> <br>
+            <a href="https://i.pinimg.com/564x/be/94/86/be9486e8f9ce355c018186785df3d413.jpg">lien de l'article</a>
+        </div>
+
+        <div class="article" id="article5">
+            <img src="Image/Hublot.jpg" alt="">
+            <p>HUBLOT <br> <span class="prix"> 70,35 $</span></p>
+            <button class="plus" data-article="article5">+</button>
+            <span class="nombre-restant">5</span>
+            <button class="moins" data-article="article5">-</button> <br><br>
+            <button class="icon-button" data-article="article5">
+                <i class="far fa-heart"></i>  
+            </button>
+            <button class="delete" data-article="article5">
+                <i class="fas fa-trash-alt"></i>
+            </button><br> <br>
+            <a href="https://i.pinimg.com/564x/45/c1/ff/45c1ff48de1bafccce8e3f9f567240c2.jpg">lien de l'article</a>
+        </div>
+
+        <div class="article" id="article6">
+            <img src="Image/Cartier.jpg" alt="">
+            <p>CARTIER <br> <span class="prix"> 35,00 $</span></p>
+            <button class="plus" data-article="article6">+</button>
+            <span class="nombre-restant">5</span>
+            <button class="moins" data-article="article6">-</button> <br> <br>
+            <button class="icon-button" data-article="article6">
+                <i class="far fa-heart small-icon"></i>  
+            </button>
+            <button class="delete" data-article="article6">
+                <i class="fas fa-trash-alt"></i>
+            </button> <br>
+        </main>
+
+        <p class="totalPrice"> TOTAL PRIX : <span class="total_prix">0.00 $</span> </p> 
+    
+        <script src="main1.js"></script>
+    </body>
+    </html>
